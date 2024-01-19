@@ -9,4 +9,8 @@
         </html>
     </xsl:template>
 
+    <xsl:template match="curso">
+        <>
+    </xsl>
+
 </xsl:stylesheet>
