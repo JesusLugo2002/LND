@@ -1,7 +1,7 @@
-(: Muestra todos los bailes con un precio superior a 40 :)
+(: Muestra todos los bailes que contengan la letra 'a' en su nombre :)
 
 for $baile in doc ("bailes.xml") //bailes/baile
-where $baile/number(precio)>40
+where contains($baile/nombre, "a")
 return
 
 <baile>

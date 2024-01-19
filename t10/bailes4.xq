@@ -1,7 +1,7 @@
-(: Muestra todos los bailes con un precio superior a 40 :)
+(: Muestra todos los bailes ordenados por nombre :)
 
 for $baile in doc ("bailes.xml") //bailes/baile
-where $baile/number(precio)>40
+order by $baile/nombre/text()
 return
 
 <baile>

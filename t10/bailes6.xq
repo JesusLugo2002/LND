@@ -1,7 +1,7 @@
-(: Muestra todos los bailes con un precio superior a 40 :)
+(: Muestra todos los bailes cuyo profesor tenga de apellido 'Lozano' :)
 
 for $baile in doc ("bailes.xml") //bailes/baile
-where $baile/number(precio)>40
+where contains($baile/profesor/text(), "Lozano")
 return
 
 <baile>
