@@ -1,4 +1,4 @@
-(: Sumar el total de dinero por clase (precio x plazas) :)
+(: Ejemplo de iteracción :)
 let $pepe := ('hola','adioh','byeh')
 return
   <matraca>{$pepe}</matraca>
