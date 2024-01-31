@@ -1,15 +1,15 @@
 # Ejercicios de Xquery de Bailes.xml
 
-A continuación los ejercicios realizados con xquery sobre el fichero de [bailes.xmi](bailes.xml).
+A continuación los ejercicios realizados con xquery sobre el fichero de [bailes.xml](bailes.xml).
 
-1. Retornar todos los bailes del fichero.
+### 1. Retornar todos los bailes del fichero.
 
 ```xq
 for $baile in doc ("bailes.xml") //bailes/baile/nombre/text()
 return $bailes
 ```
 
-2. Retornar solo el nombre y precio de los bailes.
+### 2. Retornar solo el nombre y precio de los bailes.
 
 ```xq
 for $baile in doc ("bailes.xml") //bailes/baile
@@ -21,7 +21,7 @@ return
 </baile>
 ```
 
-3. Retornar los bailes con un precio superior a 40.
+### 3. Retornar los bailes con un precio superior a 40.
 
 ```xq
 for $baile in doc ("bailes.xml") //bailes/baile
@@ -34,7 +34,7 @@ return
 </baile>
 ```
 
-4. Retornar los bailes ordenados por el nombre.
+### 4. Retornar los bailes ordenados por el nombre.
 
 ```xq
 for $baile in doc ("bailes.xml") //bailes/baile
@@ -47,7 +47,7 @@ return
 </baile>
 ```
 
-5. Retornar los bailes cuyo nombre contenga una 'a'.
+### 5. Retornar los bailes cuyo nombre contenga una 'a'.
 
 ```xq
 for $baile in doc ("bailes.xml") //bailes/baile
@@ -73,7 +73,7 @@ return
 </baile>
 ```
 
-7. Retornar todos los bailes excepto el 3 y el 5.
+### 7. Retornar todos los bailes excepto el 3 y el 5.
 
 ```xq
 for $baile in doc("bailes.xml") //bailes/baile
@@ -81,7 +81,7 @@ where $baile/@id != "3" and $baile/@id != "1"
 return $baile
 ```
 
-8. Retornar todos los bailes cuyos profesores cobra una cuota mensual.
+### 8. Retornar todos los bailes cuyos profesores cobra una cuota mensual.
 
 ```xq
 for $baile in doc("bailes.xml") //bailes/baile
@@ -89,7 +89,7 @@ where $baile/precio/@cuota = "Mensual"
 return $baile
 ```
 
-9. Retornar los bailes de la sala 1, cuyo precio sea superior a 35 y sea pagado en euros.
+### 9. Retornar los bailes de la sala 1, cuyo precio sea superior a 35 y sea pagado en euros.
 
 ```xq
 for $baile in doc("bailes.xml") //bailes/baile
@@ -99,7 +99,7 @@ where $baile/sala/text()="1"
 return $baile
 ```
 
-10. Retornar los bailes junto al total ganado de dinero (precio * plazas).
+### 10. Retornar los bailes junto al total ganado de dinero (precio * plazas).
 
 ```xq
 for $baile in doc("bailes.xml") //bailes/baile
@@ -110,9 +110,9 @@ return
 </baile>
 ```
 
-11. Retornar los bailes con un precio superior a 40, en formato HTML.
+### 11. Retornar los bailes con un precio superior a 40, en formato HTML.
 
-### Formato XQuery
+#### Formato XQuery
 
 ```xq
 <html>
@@ -130,7 +130,7 @@ return <tr><td>{$baile/nombre}</td><td>{$baile/precio}</td></tr>
 </html>
 ```
 
-### Formato HTML
+#### Formato HTML
 
 ```html
 <html>
