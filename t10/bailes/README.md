@@ -60,7 +60,7 @@ return
 </baile>
 ```
 
-6. Retornar los bailes cuyo profesor tenga como apellido 'Lozano'.
+### 6. Retornar los bailes cuyo profesor tenga como apellido 'Lozano'.
 
 ```xq
 for $baile in doc ("bailes.xml") //bailes/baile
