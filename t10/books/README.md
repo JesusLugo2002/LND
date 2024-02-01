@@ -23,6 +23,22 @@ for $x in doc("books1.xml") //book/title
 order by $x
 return $x 
 ```
+### 3. Retornar la información de los libros en una tabla HTML
+
+```xq
+<html>
+  <head><title>Lista de libros</title></head>
+  <body>
+    <table border="1">
+      <tr><th>Autor</th><th>Título</th><th>Género</th><th>Precio</th></tr>
+      {
+        for $book in doc("../books1.xml") //book
+        return <tr><td>{$book/author/text()}</td><td>{$book/title/text()}</td><td>{$book/genre/text()}</td><td>{$book/number(price)}</td></tr>
+      }
+    </table>
+  </body>
+</html>
+```
 
 ## Ejercicios con 'Books2.xml'
 
