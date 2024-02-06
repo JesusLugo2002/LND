@@ -33,3 +33,5 @@
 
 1. Referencia de artículo - referencia de proveedor - nombre de todos los artículos.
 2. Referencia de cliente - Nombre de cliente - Referencia de artículo - que han pedido algún artículo de bebidas
+3. Referencia de artículo - nombre de artículo - referencia de proveedor - nombre de proveedor - todos los artículos de bebidas.
+4. Nombre de cliente - nombre de artículo - nombre de proveedor; de los artículos cuyo nombre de categoría es Bebidas.
