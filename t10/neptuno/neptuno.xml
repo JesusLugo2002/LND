@@ -2,13 +2,15 @@
     <articulos>
         <RefArticulo>10</RefArticulo>
         <ReferenciaProveedor>100</ReferenciaProveedor>
-        <NombreArticulo>huevos</NombreArticulo>
-        <NombreCategoria>alimentación</NombreCategoria>
+        <ReferenciaPedido>3</ReferenciaPedido>
+        <NombreArticulo>La Pepsi</NombreArticulo>
+        <NombreCategoria>Bebidas</NombreCategoria>
         <PrecioUnidad>30</PrecioUnidad>
         <UnidadesExistencia>40</UnidadesExistencia>
     </articulos>
     <clientes>
         <RefCliente>1</RefCliente>
+        <ReferenciaPedido>3</ReferenciaPedido>
         <NombreCliente>Juan</NombreCliente>
         <DireccionCliente>Taco</DireccionCliente>
         <CiudadCliente>París</CiudadCliente>
