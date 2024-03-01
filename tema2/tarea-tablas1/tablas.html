@@ -7,15 +7,15 @@
 </head>
 <body>
     <!-- Primera tabla -->
+    <h2>Primera tabla</h2>
     <table border="1">
         <tr>
-            <td></td>
+            <td rowspan="2"></td>
             <td colspan="2">1ª Eval</td>
             <td colspan="2">2ª Eval</td>
             <td colspan="2">3ª Eval</td>
         </tr>
         <tr>
-            <td></td>
             <td style="background-color: green;">Aprobados</td>
             <td style="background-color: red;">Suspendidos</td>
             <td style="background-color: green;">Aprobados</td>
@@ -43,9 +43,59 @@
         </tr>
     </table>
 
+    <hr>
+
     <!-- Segunda tabla -->
-    <table>
-        
+    <h2>Segunda tabla</h2>
+    <table border="1">
+        <tr>
+            <td>Horas</td>
+            <td>Lunes</td>
+            <td>Martes</td>
+            <td>Miércoles</td>
+            <td>Jueves</td>
+            <td>Viernes</td>
+        </tr>
+        <tr>
+            <td>8:00-9:00</td>
+            <td rowspan="2" style="background-color: red;">Matemáticas</td>
+            <td style="background-color: brown;">Lengua</td>
+            <td>Música</td>
+            <td></td>
+            <td rowspan="2" style="background-color: red;">Matemáticas</td>
+        </tr>
+        <tr>
+            <td>9:00-10:00</td>
+            <td>Inglés</td>
+            <td>Inglés</td>
+            <td style="background-color: pink;">E. Física</td>
+        </tr>
+        <tr>
+            <td>10:00-10:30</td>
+            <td colspan="5" style="background-color: green;">Recreo</td>
+        </tr>
+        <tr>
+            <td>10:30-11:30</td>
+            <td style="background-color: pink;">E. Física</td>
+            <td>Valencia</td>
+            <td rowspan="2" style="background-color: brown;">Lengua</td>
+            <td style="background-color: yellow;">Informática</td>
+            <td>Inglés</td>
+        </tr>
+        <tr>
+            <td>12:30-13:30</td>
+            <td>Música</td>
+            <td style="background-color: pink;">E. Física</td>
+            <td rowspan="2" style="background-color: red;">Matemáticas</td>
+            <td style="background-color: yellow;">Informática</td>
+        </tr>
+        <tr>
+            <td>13:30-14:30</td>
+            <td></td>
+            <td style="background-color: yellow;">Informática</td>
+            <td></td>
+            <td></td>
+        </tr>
     </table>
 </body>
 </html>
