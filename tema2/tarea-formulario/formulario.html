@@ -5,24 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <style>
-        .datos {
-            background-color: bisque;
-        }
-        .acceso {
-            background-color: orange;
-        }
-        .adjuntados {
-            background-color: red;
+        legend {
+            border: 1;
+            background-color: wheat;
         }
     </style>
 </head>
 <body>
-    <div align="center">
+    <center>
         <h1>HOJA DE INSCRIPCIÓN</h1>
         <h1>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
-    </div>
+    </center>
     <form>
-        <div class="datos">
+        <fieldset style="background-color: aqua;">
+            <legend>Datos personales</legend>
             <label for="name">Nombre:</label>
             <label for="lastname">Apellidos:</label>   
             <label for="dni">DNI:</label>
@@ -46,13 +42,26 @@
             <br>
             <input type="text" id="direccion" name="direccion"/>
             <input type="text" id="codigo_postal" name="codigo_postal"/>
-        </div>
-        <div class="acceso">
-
-        </div>
-        <div class="adjuntados">
-
-        </div>
+        </fieldset>
+        <fieldset style="background-color: beige;">
+            <legend>Información de acceso</legend>
+            <input type="radio" id="access_type_direct" name="access_type">
+            <label for="access_type_direct">Direct</label> 
+            <br>
+            <input type="radio" id="access_type_free" name="access_type">
+            <label for="access_type_free">Prueba libre</label> 
+        </fieldset>
+        <fieldset style="background-color: brown;">
+            <legend>Archivos adjuntados</legend>
+            <input type="checkbox" id="foto_dni" name="foto_dni">
+            <label for="foto_dni">Fotocopia DNI</label>
+            <input type="checkbox" id="cert_acad" name="cert_acad">
+            <label for="foto_dni">Certificado académico</label>
+            <br>
+            <input type="checkbox" id="otros_docs" name="otros_docs">  
+            <label for="foto_dni">Otros documentos (especifique)</label> 
+            <input type="text" id="otros_docs" name="otros_docs">         
+        </fieldset>
     </form>
 </body>
 </html>
