@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        .datos {
+            background-color: bisque;
+        }
+        .acceso {
+            background-color: orange;
+        }
+        .adjuntados {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <h1>HOJA DE INSCRIPCIÓN</h1>
+        <h1>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
+    </div>
+    <form>
+        <div class="datos">
+            <label for="name">Nombre:</label>
+            <label for="lastname">Apellidos:</label>   
+            <label for="dni">DNI:</label>
+            <br>
+            <input type="text" id="name" name="name"/>
+            <input type="text" id="lastname" name="lastname"/>
+            <input type="text" id="dni" name="dni"/>
+            <br>
+            <label for="localidad">Localidad Nacimiento:</label>
+            <label for="provincia">Provincia:</label>
+            <label for="fecha_nac">Fecha Nacimiento</label>
+            <br>
+            <input type="text" id="localidad" name="localidad"/>
+            <select id="provincia" name="provincia">
+                <option value="">- Selecciona -</option>
+            </select>
+            <input type="date" id="fecha_nac" name="fecha_nac"/>
+            <br>
+            <label for="direccion">Dirección:</label>
+            <label for="codigo_postal">Código postal:</label>
+            <br>
+            <input type="text" id="direccion" name="direccion"/>
+            <input type="text" id="codigo_postal" name="codigo_postal"/>
+        </div>
+        <div class="acceso">
+
+        </div>
+        <div class="adjuntados">
+
+        </div>
+    </form>
+</body>
+</html>
