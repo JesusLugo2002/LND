@@ -6,8 +6,8 @@
     <title>Formulario</title>
     <style>
         legend {
-            border: 1;
-            background-color: wheat;
+            border-color: black;
+            background-color: white;
         }
     </style>
 </head>
@@ -17,7 +17,7 @@
         <h1>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
     </center>
     <form>
-        <fieldset style="background-color: aqua;">
+        <fieldset style="background-color: #cbcbcb;">
             <legend>Datos personales</legend>
             <label for="name">Nombre:</label>
             <label for="lastname">Apellidos:</label>   
@@ -43,15 +43,21 @@
             <input type="text" id="direccion" name="direccion"/>
             <input type="text" id="codigo_postal" name="codigo_postal"/>
         </fieldset>
-        <fieldset style="background-color: beige;">
+        <fieldset style="background-color: #ffe3c3;">
             <legend>Información de acceso</legend>
             <input type="radio" id="access_type_direct" name="access_type">
             <label for="access_type_direct">Direct</label> 
-            <br>
+            <ul style="list-style: none;">
+                <li><input type="radio" id="direct_type" name="direct_type"><label for="direct_type">Bachillerato LOGSE. Modalidad </label><input type="text" id="direct1" name="direct1"></li>
+                <li><input type="radio" id="direct_type" name="direct_type"><label for="direct_type">Bachillerato Experimental</label></li>
+                <li><input type="radio" id="direct_type" name="direct_type"><label for="direct_type">COU. Opción </label><input type="text" id="direct2" name="direct2"></li>
+                <li><input type="radio" id="direct_type" name="direct_type"><label for="direct_type">FP2</label></li>
+                <li><input type="radio" id="direct_type" name="direct_type"><label for="direct_type">Otros (especifique) </label><input type="text" id="direct3" name="direct3"></li>
+            </ul>
             <input type="radio" id="access_type_free" name="access_type">
             <label for="access_type_free">Prueba libre</label> 
         </fieldset>
-        <fieldset style="background-color: brown;">
+        <fieldset style="background-color: #ef7f7e;">
             <legend>Archivos adjuntados</legend>
             <input type="checkbox" id="foto_dni" name="foto_dni">
             <label for="foto_dni">Fotocopia DNI</label>
@@ -62,6 +68,8 @@
             <label for="foto_dni">Otros documentos (especifique)</label> 
             <input type="text" id="otros_docs" name="otros_docs">         
         </fieldset>
+        <br>
+        <input type="submit" value="Enviar Solicitud">
     </form>
 </body>
 </html>
